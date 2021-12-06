@@ -1,6 +1,14 @@
 .nblock {
     background-color: red;
     color: yellow;
-    height: 200px;
-    width: 300px
+    height: 780px;
+    width: 800px;
+   
+}
+body {
+background-image: url("https://www.cheatsheet.com/wp-content/uploads/2019/12/Hulk-1024x682.jpg");
+ height: 700px;
+ width: 900px;
+ margin: auto;
+ color: aliceblue;
 }

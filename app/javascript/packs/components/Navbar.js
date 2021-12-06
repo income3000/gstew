@@ -7,18 +7,22 @@ import Army from './Army'
 function Navbar() {
     return (
         <div>
-            <ul className="nav justify-content-center">
-  <li className="nav-item">
+            <ul className="nav justify-content-center bg-dark">
+            <li className="nav-item ">
+    <a className="nav-link active" aria-current="page" href="/">Home</a>
+  </li>
+  <li className="nav-item ">
     <a className="nav-link active" aria-current="page" href="/users/new">New User</a>
   </li>
   <li className="nav-item">
   <a className="nav-link active" aria-current="page" href="/users">Users</a>
   </li>
   <li className="nav-item">
-  <a className="nav-link active" aria-current="page" href="/army">Army</a>
+  <a className="nav-link active" aria-current="page" href="/army">THOR</a>
   </li>
   <li className="nav-item">
-    
+  <a className="nav-link active" aria-current="page" href="/navy">HULK</a>
+
   </li>
 </ul>
 <Router>
