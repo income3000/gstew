@@ -1,10 +1,15 @@
 import React from 'react'
-
+import './Home.css'
 export default function Home() {
+  
     return (
-        <div>
-        <img src="http://www.hdwallpaperslife.com/wp-content/uploads/2018/07/spider_man_infinity_war_armor-1280x1200.jpg" alt="no image"/>
-            
-        </div>
+        <body>
+          
+              
+            the amazing spider-man<br/>
+            is the best in the mcu<br/>
+            and thats all you need to know<br/>
+          
+        </body>
     )
 }

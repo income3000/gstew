@@ -1,0 +1,13 @@
+body {
+    background-image: url("http://www.hdwallpaperslife.com/wp-content/uploads/2018/07/spider_man_infinity_war_armor-1280x1200.jpg");
+    height: 700px;
+    width: 100%;
+
+}
+p {
+   
+    height: 50px;
+    width: fit-content;
+    text-align: left;
+    padding-right: 600px;
+}

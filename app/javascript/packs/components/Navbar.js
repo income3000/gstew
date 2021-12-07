@@ -1,13 +1,13 @@
 import React from 'react'
-import {Link, Route, Routes} from 'react-router-dom'
+import { Route, Routes} from 'react-router-dom'
 import { BrowserRouter as Router } from 'react-router-dom'
 import Navy from './Navy'
 import Home from './Home'
 import Army from './Army'
 function Navbar() {
     return (
-        <div>
-            <ul className="nav justify-content-center bg-dark">
+        <div className="navbar navbar-dark sticky-top bg-primary justify-content-center">
+            <ul className="nav justify-content-center">
             <li className="nav-item ">
     <a className="nav-link active" aria-current="page" href="/">Home</a>
   </li>

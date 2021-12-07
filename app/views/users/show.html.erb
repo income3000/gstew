@@ -1,14 +1,14 @@
 <p id="notice"><%= notice %></p>
+<%= render 'navbar' %>
 
+
+<div class="card" style="width: 18rem;">
+<div class="card-body">
 <p>
-  <strong>First name:</strong>
+  <strong>Name:</strong>
   <%= @user.first_name %>
 </p>
 
-<p>
-  <strong>Last name:</strong>
-  <%= @user.last_name %>
-</p>
 
 <p>
   <strong>Email:</strong>
@@ -20,5 +20,8 @@
   <%= @user.age %>
 </p>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<button><%= link_to 'Edit', edit_user_path(@user) %></button> |
+<button><%= link_to 'Back', users_path %></button> |
+<button><%= link_to 'Destroy', @user, method: :delete, data: { confirm: 'Are you sure?' } %></button>
+</div>
+</div>
