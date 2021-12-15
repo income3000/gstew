@@ -24,6 +24,10 @@ function Navbar() {
   <a className="nav-link active" aria-current="page" href="/navy">HULK</a>
 
   </li>
+  <li className="nav-item">
+  <a className="nav-link active" aria-current="page" href="/events">Event</a>
+
+  </li>
 </ul>
 <Router>
 <Routes>

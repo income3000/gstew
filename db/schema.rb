@@ -10,7 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_03_081053) do
+ActiveRecord::Schema.define(version: 2021_12_09_042355) do
+
+  create_table "comments", force: :cascade do |t|
+    t.string "title"
+    t.text "body"
+    t.integer "event_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["event_id"], name: "index_comments_on_event_id"
+  end
+
+  create_table "events", force: :cascade do |t|
+    t.string "city"
+    t.string "title"
+    t.string "link"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "first_name"
@@ -21,4 +38,5 @@ ActiveRecord::Schema.define(version: 2021_12_03_081053) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "comments", "events"
 end

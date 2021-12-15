@@ -2,7 +2,7 @@ import React from 'react'
 import './Navy.css'
 export default function Navy() {
     return (
-        <body>
+        <div className="hulk">
         name: Hulk<br/>
         age: 39<br/>
         Strength Level: unknown <br/>
@@ -10,6 +10,6 @@ export default function Navy() {
         
         
 
-        </body>
+        </div>
     )
 }
